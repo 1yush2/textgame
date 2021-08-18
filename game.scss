@@ -13,20 +13,29 @@ $containColor : lightblue;
 
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
     background-color: $backColor;
+    h1{
+        color: $fontColor;
+        text-transform: capitalize;
+        &:hover{
+            cursor: pointer;
+            color: $primaryColor;
+        }
+    }
 }
 
 .game-container{
     width: 800px;
     max-width: 80%;
-    border: 3px solid red;
-    box-shadow: 0px 0px 10px 2px red;
+    box-shadow: 0px 0px 10px 5px;
     padding: 10px;
     background-color: $containColor;
+    margin-top: 4em;
     .button-grid{
         display: grid;
         grid-template-columns: repeat(2,auto);
@@ -39,7 +48,7 @@ body{
             padding: 4px 8px;
             color: $fontColor;
             &:hover {
-                border-color: $backColor;
+                background-color: $backColor;
             }
         }
     }
