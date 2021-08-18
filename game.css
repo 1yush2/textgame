@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #333;
+}
+
+.game-container {
+  width: 800px;
+  max-width: 80%;
+  border: 3px solid red;
+  -webkit-box-shadow: 0px 0px 10px 2px red;
+          box-shadow: 0px 0px 10px 2px red;
+  padding: 10px;
+  background-color: lightblue;
+}
+
+.game-container .button-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin-top: 2em;
+}
+
+.game-container .button-grid .btn {
+  background-color: #00aaff;
+  border: 1px solid #006699;
+  border-radius: 5px;
+  padding: 4px 8px;
+  color: white;
+}
+/*# sourceMappingURL=game.css.map */
