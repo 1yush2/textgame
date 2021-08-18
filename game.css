@@ -49,4 +49,7 @@ body {
   padding: 4px 8px;
   color: white;
 }
-/*# sourceMappingURL=game.css.map */
+
+.game-container .button-grid .btn:hover {
+  border-color: #333;
+}
